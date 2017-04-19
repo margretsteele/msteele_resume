@@ -1,0 +1,72 @@
+% resume 2016
+
+\documentclass[11pt,a4paper,sans]{moderncv}        % possible options include font size ('10pt', '11pt' and '12pt'), paper size ('a4paper', 'letterpaper', 'a5paper', 'legalpaper', 'executivepaper' and 'landscape') and font family ('sans' and 'roman')
+
+% moderncv themes
+\moderncvstyle{banking}                            % style options are 'casual' (default), 'classic', 'oldstyle' and 'banking'
+\moderncvcolor{red}                                % color options 'blue' (default), 'orange', 'green', 'red', 'purple', 'grey' and 'black'
+\renewcommand{\familydefault}{\sfdefault}         % to set the default font; use '\sfdefault' for the default sans serif font, '\rmdefault' for the default roman one, or any tex font name
+\nopagenumbers{}
+
+% character encoding
+\usepackage[utf8]{inputenc}
+
+% adjust the page margins
+\usepackage[scale=0.75]{geometry}
+%\setlength{\hintscolumnwidth}{3cm}                % if you want to change the width of the column with the dates
+
+
+% personal data
+\name{Margret}{Steele}
+\title{Developer}
+\address{4716 Adams St}{Westwood, KS}{}
+\phone[mobile]{+1~(636)~734~5629}
+\email{me@margretsteele.com}
+\homepage{www.margretsteele.com}
+
+%----------------------------------------------------------------------------------
+%            content
+%----------------------------------------------------------------------------------
+\begin{document}
+%-----       resume       ---------------------------------------------------------
+\makecvtitle
+
+\section{Experience}
+\subsection{Industry}
+\cventry{2013--2016}{Software Engineer}{Bats Global Markets}{Lenexa, KS}{}{Real-time, latency-focused C++ development{}
+\begin{itemize}
+\item Mitigated and resolved production system issues in a highly regulated distributed environment in which time is measured at microsecond granularity
+\item Designed and implemented a new multicast auction market data feed for the Bats Options markets increasing customer responsiveness
+\item Increased retail order flow to the Bats Equities markets with a new order routing strategy
+\item Implemented monitoring to automatically halt a member's trading when unusual volume is detected, providing a measure of security for automated traders
+\item Improved route price selection for all routed orders (150M shares daily)
+\item Organized and presented computer science-focused look into the financial sector to several K-12 school groups (10-40 kids per group)
+\item Organized and participated in 8 university recruitment events 
+\end{itemize}}
+\cventry{2011--2013}{Software Engineer Intern}{Garmin}{Olathe, KS}{}{Low level development for Automotive OEM products}
+\subsection{Academic Research}
+\cventry{2012}{Undergraduate Research Assistant}
+{VRCC-3D}{Rolla, MO}{}{Tested and documented the software for the Qualitative Spatial Reasoning project}
+
+\cventry{2011--2012}{Undergraduate Research Assistant}
+{Virtual Facilitator}{Rolla, MO}{}{Managed a team of undergraduates in developing a User Interface for a Natural Language Processing project}
+
+\section{Education}
+\cventry{2010--2013}{B.S. Computer Science}{Missouri University of Science and Technology}{Rolla, MO}{}{}  % arguments 3 to 6 can be left empty
+\cventry{2008--2010}{A.S. Science and Mathematics}{Missouri Academy of Science, Mathematics, and Computing}{Maryville, MO}{}{}
+
+\section{Skills}
+\cvdoubleitem{Languages}{C++, Python, Java, Javascript}{Operating Systems}{SuSE, Debian, RedHat}
+\cvdoubleitem{Libraries}{Boost, Django, \LaTeX}{Platforms}{Google App Engine, Amazon EC2}
+\cvdoubleitem{Concepts}{OOP, Distributed Systems, Agile}{Miscellaneous}{Google Domains, PostgreSQL}
+
+\section{Volunteering}
+\cventry{2016--current}{Volunteer}{CPPCON}{Seattle, WA}{}{Organized all aspects of an all-day conference field trip for 30-50 people for CPPCON 2017}
+\cventry{2015--current}{Volunteer Instructor}{Girls Who Code}{Kansas City, MO}{}{Teach computer science concepts to underprivileged middle-school and high-school aged girls for 3-5 hours each week during the school year}
+\cventry{2015--current}{Mentor}{KC STEM Alliance}{Kansas City, MO}{}{Attend and help out at ad-hoc events that promote STEM to Kansas City kids aged K-12 }
+\cventry{2016}{Volunteer Manager}{KC STEM Alliance}{Kansas City, MO}{}{Liaise with the KC STEM Alliance to bring strategic and targeted volunteer opportunities to the Bats operations team }
+\cventry{2016}{Volunteer}{Burning Man}{San Fransisco, CA}{}{Tested functionality and reported bugs on 4 types of application forms for Burning Man 2016}
+
+\section{Extracurriculars}
+\cventry{2011-2013}{President}{Association for Computing Machinery}{Rolla, MO}{}{}
+\end{document}
