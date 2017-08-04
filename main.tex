@@ -1,10 +1,8 @@
-% resume 2016
-
 \documentclass[10pt,a4paper,sans]{moderncv}        % possible options include font size ('10pt', '11pt' and '12pt'), paper size ('a4paper', 'letterpaper', 'a5paper', 'legalpaper', 'executivepaper' and 'landscape') and font family ('sans' and 'roman')
 
 % moderncv themes
-\moderncvstyle{banking}                            % style options are 'casual' (default), 'classic', 'oldstyle' and 'banking'
-\moderncvcolor{red}                                % color options 'blue' (default), 'orange', 'green', 'red', 'purple', 'grey' and 'black'
+\moderncvstyle{banking}
+\moderncvcolor{orange}                                % color options 'blue' (default), 'orange', 'green', 'red', 'purple', 'grey' and 'black'
 \renewcommand{\familydefault}{\sfdefault}         % to set the default font; use '\sfdefault' for the default sans serif font, '\rmdefault' for the default roman one, or any tex font name
 \nopagenumbers{}
 
@@ -12,7 +10,17 @@
 \usepackage[utf8]{inputenc}
 
 % adjust the page margins
-\usepackage[scale=0.75]{geometry}
+%\usepackage[scale=0.75]{geometry}
+\usepackage{geometry}
+\geometry{
+    a4paper,
+    total={170mm,257mm},
+    left=20mm,
+    right=20mm,
+    top=20mm,
+    bottom=20mm
+}
+
 %\setlength{\hintscolumnwidth}{3cm}                % if you want to change the width of the column with the dates
 
 
@@ -33,10 +41,12 @@
 
 \section{Experience}
 \subsection{Industry}
-\cventry{2017--current}{Software Engineer}{Amazon}{Seattle, WA}{}{React/Redux JavaScript web development for the Consumer Economics team}
+\cventry{2017--current}{Software Engineer}{Amazon}{Seattle, WA}{}{Full-stack development for the Consumer Economics team}
 \begin{itemize}
-\item Worked with economists to gather and present labor force data to Amazon real estate team for use in fullfillment center location selection
-\item Learned several new languages and technologies
+\item Worked with economists to gather and present labor force data to Amazon real estate team for use in fulfillment center location selection
+\item Automated project code deployment
+\item Automated data acquisition and processing
+\item Worked simultaneously on 3 related projects
 \makenewline
 \makenewline
 \end{itemize}
@@ -63,13 +73,15 @@
 \cventry{2008--2010}{A.S. Science and Mathematics}{Missouri Academy of Science, Mathematics, and Computing}{Maryville, MO}{}{}
 
 \section{Skills}
-\cvdoubleitem{Languages}{C++, Javascript, Python, Java}{Operating Systems}{SuSE, Debian, RedHat}
+\cvdoubleitem{Languages}{C++, Javascript, Python, Java, R}{Operating Systems}{SuSE, Debian, RedHat}
 \cvdoubleitem{Libraries}{Boost, React/Redux, Django, \LaTeX}{Platforms}{Amazon EC2, Google App Engine}
-\cvdoubleitem{Concepts}{OOP, Distributed Systems, Agile}{Miscellaneous}{Amazon RDS, PostgreSQL}
+\cvdoubleitem{Concepts}{OOP, Distributed Systems, Agile}{Miscellaneous}{Amazon RDS, PostgreSQL, Hadoop}
+
+\section{Extracurriculars}
+\cventry{2011-2013}{President}{Association for Computing Machinery}{Rolla, MO}{}{}
 
 \section{Volunteering}
-
-\cventry{2017--current}{Teaching Assistant}{Amazon Machine Learning University}{Seattle, WA}{Mathematics Fundamentals for Machine Learning}{Helped create assignments, exams, projects, and quizzes for 2 classes of 30 people}
+\cventry{2017}{Teaching Assistant}{Amazon Machine Learning University}{Seattle, WA}{Mathematics Fundamentals for Machine Learning}{Helped create assignments, exams, projects, and quizzes for 2 classes of 30 people}
 
 \cventry{2016--current}{Volunteer}{CPPCON}{Seattle, WA}{}{Organized all aspects of an all-day conference field trip for 30-50 people for CPPCON 2017}
 
@@ -81,6 +93,4 @@
 
 \cventry{2016, 2017}{Volunteer}{Burning Man}{San Francisco, CA}{}{Tested functionality and reported bugs on 4 types of application forms for Burning Man 2016}
 
-\section{Extracurriculars}
-\cventry{2011-2013}{President}{Association for Computing Machinery}{Rolla, MO}{}{}
 \end{document}
